@@ -1,3 +1,2 @@
-fetch("http://guh1fxwc.directus.app/items/Notes")
-  .then((response) => response.json())
-  .then((data) => console.log(data));
+const notesContainer = document.getElementById("notes");
+const addNoteButton = notesContainer.querySelector(".add-note");
