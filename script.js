@@ -14,16 +14,14 @@ function createNoteElement(id, content) {
 
   element.classList.add("note");
   element.value = content;
-  element.placeholder = "Empty Sticky Note";
+  element.placeholder = "Empty  Note";
 
   element.addEventListener("change", () => {
     updateNote(id, element.value);
   });
 
   element.addEventListener("dblclick", () => {
-    const doDelete = confirm(
-      "Are you sure you wish to delete this sticky note?"
-    );
+    const doDelete = confirm("Are you sure you want to delete this  note?");
 
     if (doDelete) {
       deleteNote(id, element);
